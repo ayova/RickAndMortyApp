@@ -3,27 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DEF19B1C269383E2003A2A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B1B269383E2003A2A45 /* AppDelegate.swift */; };
 		DEF19B1E269383E2003A2A45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B1D269383E2003A2A45 /* SceneDelegate.swift */; };
-		DEF19B20269383E2003A2A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B1F269383E2003A2A45 /* ViewController.swift */; };
-		DEF19B23269383E2003A2A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF19B21269383E2003A2A45 /* Main.storyboard */; };
 		DEF19B25269383E3003A2A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF19B24269383E3003A2A45 /* Assets.xcassets */; };
 		DEF19B28269383E3003A2A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF19B26269383E3003A2A45 /* LaunchScreen.storyboard */; };
+		DEF19B3126938592003A2A45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DEF19B3026938592003A2A45 /* SnapKit */; };
+		DEF19B34269385BD003A2A45 /* XCoordinatorRx in Frameworks */ = {isa = PBXBuildFile; productRef = DEF19B33269385BD003A2A45 /* XCoordinatorRx */; };
+		DEF19B36269385BD003A2A45 /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = DEF19B35269385BD003A2A45 /* XCoordinator */; };
+		DEF19B3E269386C3003A2A45 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DEF19B3D269386C3003A2A45 /* Alamofire */; };
+		DEF19B4326938738003A2A45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B4226938738003A2A45 /* AppCoordinator.swift */; };
+		DEF19B4526938760003A2A45 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B4426938760003A2A45 /* HomeCoordinator.swift */; };
+		DEF19B47269387AC003A2A45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B46269387AC003A2A45 /* HomeViewController.swift */; };
+		DEF19B49269387DB003A2A45 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B48269387DB003A2A45 /* HomeViewModel.swift */; };
+		DEF19B5126938AE0003A2A45 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DEF19B5026938AE0003A2A45 /* RxCocoa */; };
+		DEF19B5326938AE0003A2A45 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEF19B5226938AE0003A2A45 /* RxSwift */; };
+		DEF19B5626938C5D003A2A45 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B5526938C5D003A2A45 /* BaseExtensions.swift */; };
+		DEF19B5926938CFE003A2A45 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B5826938CFE003A2A45 /* CharacterInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DEF19B18269383E2003A2A45 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF19B1B269383E2003A2A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF19B1D269383E2003A2A45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEF19B1F269383E2003A2A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEF19B22269383E2003A2A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEF19B24269383E3003A2A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF19B27269383E3003A2A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEF19B29269383E3003A2A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF19B4226938738003A2A45 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DEF19B4426938760003A2A45 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		DEF19B46269387AC003A2A45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DEF19B48269387DB003A2A45 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DEF19B5526938C5D003A2A45 /* BaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
+		DEF19B5826938CFE003A2A45 /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF19B5326938AE0003A2A45 /* RxSwift in Frameworks */,
+				DEF19B34269385BD003A2A45 /* XCoordinatorRx in Frameworks */,
+				DEF19B3E269386C3003A2A45 /* Alamofire in Frameworks */,
+				DEF19B5126938AE0003A2A45 /* RxCocoa in Frameworks */,
+				DEF19B36269385BD003A2A45 /* XCoordinator in Frameworks */,
+				DEF19B3126938592003A2A45 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +62,7 @@
 			children = (
 				DEF19B1A269383E2003A2A45 /* RickAndMortyApp */,
 				DEF19B19269383E2003A2A45 /* Products */,
+				DEF19B4F26938AE0003A2A45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,66 @@
 		DEF19B1A269383E2003A2A45 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
-				DEF19B1B269383E2003A2A45 /* AppDelegate.swift */,
-				DEF19B1D269383E2003A2A45 /* SceneDelegate.swift */,
-				DEF19B1F269383E2003A2A45 /* ViewController.swift */,
-				DEF19B21269383E2003A2A45 /* Main.storyboard */,
+				DEF19B3F269386E5003A2A45 /* App */,
 				DEF19B24269383E3003A2A45 /* Assets.xcassets */,
-				DEF19B26269383E3003A2A45 /* LaunchScreen.storyboard */,
-				DEF19B29269383E3003A2A45 /* Info.plist */,
+				DEF19B5426938C3F003A2A45 /* Extensions */,
+				DEF19B5726938CEB003A2A45 /* Models */,
+				DEF19B4026938709003A2A45 /* Screens */,
 			);
 			path = RickAndMortyApp;
+			sourceTree = "<group>";
+		};
+		DEF19B3F269386E5003A2A45 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DEF19B1B269383E2003A2A45 /* AppDelegate.swift */,
+				DEF19B29269383E3003A2A45 /* Info.plist */,
+				DEF19B26269383E3003A2A45 /* LaunchScreen.storyboard */,
+				DEF19B1D269383E2003A2A45 /* SceneDelegate.swift */,
+				DEF19B4226938738003A2A45 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DEF19B4026938709003A2A45 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DEF19B412693871D003A2A45 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DEF19B412693871D003A2A45 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DEF19B4426938760003A2A45 /* HomeCoordinator.swift */,
+				DEF19B46269387AC003A2A45 /* HomeViewController.swift */,
+				DEF19B48269387DB003A2A45 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DEF19B4F26938AE0003A2A45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEF19B5426938C3F003A2A45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEF19B5526938C5D003A2A45 /* BaseExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEF19B5726938CEB003A2A45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEF19B5826938CFE003A2A45 /* CharacterInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +155,14 @@
 			dependencies = (
 			);
 			name = RickAndMortyApp;
+			packageProductDependencies = (
+				DEF19B3026938592003A2A45 /* SnapKit */,
+				DEF19B33269385BD003A2A45 /* XCoordinatorRx */,
+				DEF19B35269385BD003A2A45 /* XCoordinator */,
+				DEF19B3D269386C3003A2A45 /* Alamofire */,
+				DEF19B5026938AE0003A2A45 /* RxCocoa */,
+				DEF19B5226938AE0003A2A45 /* RxSwift */,
+			);
 			productName = RickAndMortyApp;
 			productReference = DEF19B18269383E2003A2A45 /* RickAndMortyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +190,12 @@
 				Base,
 			);
 			mainGroup = DEF19B0F269383E2003A2A45;
+			packageReferences = (
+				DEF19B2F26938592003A2A45 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DEF19B32269385BD003A2A45 /* XCRemoteSwiftPackageReference "XCoordinator" */,
+				DEF19B3C269386C3003A2A45 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DEF19B4A269388A5003A2A45 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DEF19B19269383E2003A2A45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +212,6 @@
 			files = (
 				DEF19B28269383E3003A2A45 /* LaunchScreen.storyboard in Resources */,
 				DEF19B25269383E3003A2A45 /* Assets.xcassets in Resources */,
-				DEF19B23269383E2003A2A45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +222,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF19B20269383E2003A2A45 /* ViewController.swift in Sources */,
+				DEF19B4326938738003A2A45 /* AppCoordinator.swift in Sources */,
+				DEF19B5626938C5D003A2A45 /* BaseExtensions.swift in Sources */,
+				DEF19B49269387DB003A2A45 /* HomeViewModel.swift in Sources */,
+				DEF19B4526938760003A2A45 /* HomeCoordinator.swift in Sources */,
 				DEF19B1C269383E2003A2A45 /* AppDelegate.swift in Sources */,
 				DEF19B1E269383E2003A2A45 /* SceneDelegate.swift in Sources */,
+				DEF19B47269387AC003A2A45 /* HomeViewController.swift in Sources */,
+				DEF19B5926938CFE003A2A45 /* CharacterInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DEF19B21269383E2003A2A45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEF19B22269383E2003A2A45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DEF19B26269383E3003A2A45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YUSXZ8LZST;
-				INFOPLIST_FILE = RickAndMortyApp/Info.plist;
+				INFOPLIST_FILE = RickAndMortyApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +389,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YUSXZ8LZST;
-				INFOPLIST_FILE = RickAndMortyApp/Info.plist;
+				INFOPLIST_FILE = RickAndMortyApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +423,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEF19B2F26938592003A2A45 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		DEF19B32269385BD003A2A45 /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quickbirdstudios/XCoordinator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.7;
+			};
+		};
+		DEF19B3C269386C3003A2A45 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		DEF19B4A269388A5003A2A45 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEF19B3026938592003A2A45 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF19B2F26938592003A2A45 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DEF19B33269385BD003A2A45 /* XCoordinatorRx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF19B32269385BD003A2A45 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinatorRx;
+		};
+		DEF19B35269385BD003A2A45 /* XCoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF19B32269385BD003A2A45 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinator;
+		};
+		DEF19B3D269386C3003A2A45 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF19B3C269386C3003A2A45 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DEF19B5026938AE0003A2A45 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF19B4A269388A5003A2A45 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DEF19B5226938AE0003A2A45 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF19B4A269388A5003A2A45 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEF19B10269383E2003A2A45 /* Project object */;
 }
