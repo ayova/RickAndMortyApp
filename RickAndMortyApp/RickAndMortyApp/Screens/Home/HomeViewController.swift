@@ -12,6 +12,7 @@ import SnapKit
 
 final class HomeViewController: UIViewController {
     private let disposer = DisposeBag()
+    private let didReachEnd = BehaviorRelay<Bool>(value: false)
 
     // MARK: Views
 
@@ -52,5 +53,24 @@ final class HomeViewController: UIViewController {
             .bind { [weak viewModel] charSelectedId in
                 viewModel?.getDetails(forCharacterWithId: charSelectedId)
             }.disposed(by: disposer)
+
+        charactersTableView.rx
+            .setDelegate(self)
+            .disposed(by: disposer)
+
+        didReachEnd
+            .bind { [weak viewModel] reachedEnd in
+                if reachedEnd {
+                    viewModel?.getMoreCharacters()
+                }
+            }.disposed(by: disposer)
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.frame.height - 50 {
+            didReachEnd.accept(true)
+        }
     }
 }
