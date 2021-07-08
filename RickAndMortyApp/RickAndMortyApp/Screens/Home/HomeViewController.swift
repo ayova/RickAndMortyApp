@@ -12,9 +12,10 @@ import SnapKit
 
 final class HomeViewController: UIViewController {
     private let disposer = DisposeBag()
-    // TODO: tableView
 
     // MARK: Views
+
+    private lazy var charactersTableView = UITableView()
 
     // MARK: Init
 
@@ -23,11 +24,25 @@ final class HomeViewController: UIViewController {
     }
 
     private func setup() {
-        view.backgroundColor = .red
-        // TODO: lay out the tableView
+        charactersTableView.register(
+            CharacterCell.self,
+            forCellReuseIdentifier: CharacterCell.identifier
+        )
+
+        view.addSubview(charactersTableView)
+
+        charactersTableView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
 
     public func bind(to viewModel: HomeViewModel) {
-        // TODO: bind tableView & model selections
+        viewModel.allCharacters
+            .bind(to: charactersTableView.rx.items(
+                    cellIdentifier: CharacterCell.identifier,
+                    cellType: CharacterCell.self)
+            ) { _, character, cell in
+                cell.configure(withCharacter: character)
+            }.disposed(by: disposer)
     }
 }
