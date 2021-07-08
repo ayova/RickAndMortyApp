@@ -59,6 +59,7 @@ final class HomeViewController: UIViewController {
             .disposed(by: disposer)
 
         didReachEnd
+            .throttle(.milliseconds(500), scheduler: MainScheduler.asyncInstance)
             .bind { [weak viewModel] reachedEnd in
                 if reachedEnd {
                     viewModel?.getMoreCharacters()
@@ -71,6 +72,8 @@ extension HomeViewController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.frame.height - 50 {
             didReachEnd.accept(true)
+        } else {
+            didReachEnd.accept(false)
         }
     }
 }
