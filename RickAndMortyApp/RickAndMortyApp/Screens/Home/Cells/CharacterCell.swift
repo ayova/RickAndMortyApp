@@ -56,7 +56,7 @@ final class CharacterCell: UITableViewCell {
         }
     }
 
-    public func configure(withCharacter characterInfo: CharacterInfo) {
+    public func configure(withCharacter characterInfo: CharacterKeyInfo) {
         nameLabel.text = characterInfo.name
         specieLabel.text = "Specie: ".appending(characterInfo.species)
         statusLabel.text = "Status: ".appending(characterInfo.status)

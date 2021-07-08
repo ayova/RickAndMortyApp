@@ -9,7 +9,7 @@ import Foundation
 import XCoordinator
 
 enum HomeRoute: Route {
-    case main
+    case details(forCharacter: CharacterDetails)
 }
 
 final class HomeCoordinator: NavigationCoordinator<HomeRoute> {
@@ -26,8 +26,9 @@ final class HomeCoordinator: NavigationCoordinator<HomeRoute> {
 
     override func prepareTransition(for route: HomeRoute) -> NavigationTransition {
         switch route {
-        case .main:
-            return .none()
+        case .details(let character):
+            let vc = CharacterDetailViewController(for: character)
+            return .push(vc)
         }
     }
 }
