@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE1AF998269785CB00CDA5E6 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AF997269785CB00CDA5E6 /* CharacterCell.swift */; };
+		DE479BAD269500C900DEAFF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE479BAC269500C900DEAFF1 /* Kingfisher */; };
 		DEF19B1C269383E2003A2A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B1B269383E2003A2A45 /* AppDelegate.swift */; };
 		DEF19B1E269383E2003A2A45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF19B1D269383E2003A2A45 /* SceneDelegate.swift */; };
 		DEF19B25269383E3003A2A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF19B24269383E3003A2A45 /* Assets.xcassets */; };
@@ -26,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE1AF997269785CB00CDA5E6 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		DEF19B18269383E2003A2A45 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF19B1B269383E2003A2A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF19B1D269383E2003A2A45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 			files = (
 				DEF19B5326938AE0003A2A45 /* RxSwift in Frameworks */,
 				DEF19B34269385BD003A2A45 /* XCoordinatorRx in Frameworks */,
+				DE479BAD269500C900DEAFF1 /* Kingfisher in Frameworks */,
 				DEF19B3E269386C3003A2A45 /* Alamofire in Frameworks */,
 				DEF19B5126938AE0003A2A45 /* RxCocoa in Frameworks */,
 				DEF19B36269385BD003A2A45 /* XCoordinator in Frameworks */,
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE479BA82694F7DE00DEAFF1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AF997269785CB00CDA5E6 /* CharacterCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DEF19B0F269383E2003A2A45 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 		DEF19B412693871D003A2A45 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DE479BA82694F7DE00DEAFF1 /* Cells */,
 				DEF19B4426938760003A2A45 /* HomeCoordinator.swift */,
 				DEF19B46269387AC003A2A45 /* HomeViewController.swift */,
 				DEF19B48269387DB003A2A45 /* HomeViewModel.swift */,
@@ -162,6 +175,7 @@
 				DEF19B3D269386C3003A2A45 /* Alamofire */,
 				DEF19B5026938AE0003A2A45 /* RxCocoa */,
 				DEF19B5226938AE0003A2A45 /* RxSwift */,
+				DE479BAC269500C900DEAFF1 /* Kingfisher */,
 			);
 			productName = RickAndMortyApp;
 			productReference = DEF19B18269383E2003A2A45 /* RickAndMortyApp.app */;
@@ -195,6 +209,7 @@
 				DEF19B32269385BD003A2A45 /* XCRemoteSwiftPackageReference "XCoordinator" */,
 				DEF19B3C269386C3003A2A45 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DEF19B4A269388A5003A2A45 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DE479BAB269500C900DEAFF1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = DEF19B19269383E2003A2A45 /* Products */;
 			projectDirPath = "";
@@ -225,6 +240,7 @@
 				DEF19B4326938738003A2A45 /* AppCoordinator.swift in Sources */,
 				DEF19B5626938C5D003A2A45 /* BaseExtensions.swift in Sources */,
 				DEF19B49269387DB003A2A45 /* HomeViewModel.swift in Sources */,
+				DE1AF998269785CB00CDA5E6 /* CharacterCell.swift in Sources */,
 				DEF19B4526938760003A2A45 /* HomeCoordinator.swift in Sources */,
 				DEF19B1C269383E2003A2A45 /* AppDelegate.swift in Sources */,
 				DEF19B1E269383E2003A2A45 /* SceneDelegate.swift in Sources */,
@@ -425,6 +441,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE479BAB269500C900DEAFF1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 		DEF19B2F26938592003A2A45 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -460,6 +484,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE479BAC269500C900DEAFF1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE479BAB269500C900DEAFF1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		DEF19B3026938592003A2A45 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEF19B2F26938592003A2A45 /* XCRemoteSwiftPackageReference "SnapKit" */;
